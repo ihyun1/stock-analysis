@@ -10,17 +10,23 @@ Initially, our client wanted to analyze 12 stocks of green energy companies, wit
 An important step to make this code more efficient was to create a series of arrays in addition to our already existing array for tickers. So, we created three arrays, tickerVolumes, tickerStartingPrices, and tickerEndingPrices, to avoid creating the three separate variables for the values we would need to calculate our desired outputs. To make these arrays functional, we had to create a tickerIndex as well in order to properly reference the desired stocks.
 
 ![VBA_Loops.png](Resources/VBA_Loops.png)
+
 Additionally, in our updated version we were able to avoid using nested loops to find the three values for each stock.
 
-- 2017 vs. 2018
-![All_Stocks_2017.png](Resources/All_Stocks_2017.png)
-As shown above, all 12 selected stocks of green energy companies had positive returns, except for TERP which had a return of -7.2%. DQ, the stock of particular interest to our client, had the highest yearly return at 199.4%.
 
-![All_Stocks_2018.png](Resources/All_Stocks_2018.png)
+- 2017 vs. 2018
+
+As shown below, all 12 selected stocks of green energy companies had positive returns, except for TERP which had a return of -7.2%. DQ, the stock of particular interest to our client, had the highest yearly return at 199.4%.
+
 Conversely, 2018 was a poor growth year for these companies with only ENPH and RUN having positive returns. These two stocks significantly outperformed the others in both return and trading volume. Additionally, only half of the stocks decreased in total daily volume. 
 
-- Execution
+![All_Stocks_2017.png](Resources/All_Stocks_2017.png) ![All_Stocks_2018.png](Resources/All_Stocks_2018.png)
+
+
+- Refactored
 ![VBA_Challenge_2017.png](Resources/VBA_Challenge_2017.png) ![VBA_Challenge_2018.png](Resources/VBA_Challenge_2018.png)
+
+- Original
 ![Green_Sheets_2017.png](Resources/Green_Sheets_2017.png) ![Green_Sheets_2018.png](Resources/Green_Sheets_2018.png)
 
 It is clear that the refactored code was significantly more efficient performing the same analysis, and it returned the same values as the original function.
