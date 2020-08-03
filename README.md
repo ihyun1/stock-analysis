@@ -5,7 +5,7 @@ Initially, our client wanted to analyze 12 stocks of green energy companies, wit
 
 ## Results
 
-- VBA code
+### VBA code
 ![VBA_Arrays.png](Resources/VBA_Arrays.png)
 An important step to make this code more efficient was to create a series of arrays in addition to our already existing array for tickers. So, we created three arrays, tickerVolumes, tickerStartingPrices, and tickerEndingPrices, to avoid creating the three separate variables for the values we would need to calculate our desired outputs. To make these arrays functional, we had to create a tickerIndex as well in order to properly reference the desired stocks.
 
@@ -14,7 +14,7 @@ An important step to make this code more efficient was to create a series of arr
 Additionally, in our updated version we were able to avoid using nested loops to find the three values for each stock.
 
 
-- 2017 vs. 2018
+### 2017 vs. 2018
 
 As shown below, all 12 selected stocks of green energy companies had positive returns, except for TERP which had a return of -7.2%. DQ, the stock of particular interest to our client, had the highest yearly return at 199.4%.
 
@@ -23,19 +23,19 @@ Conversely, 2018 was a poor growth year for these companies with only ENPH and R
 ![All_Stocks_2017.png](Resources/All_Stocks_2017.png) ![All_Stocks_2018.png](Resources/All_Stocks_2018.png)
 
 
-- Refactored
+### Refactored
 ![VBA_Challenge_2017.png](Resources/VBA_Challenge_2017.png) ![VBA_Challenge_2018.png](Resources/VBA_Challenge_2018.png)
 
-- Original
+### Original
 ![Green_Sheets_2017.png](Resources/Green_Sheets_2017.png) ![Green_Sheets_2018.png](Resources/Green_Sheets_2018.png)
 
 It is clear that the refactored code was significantly more efficient performing the same analysis, and it returned the same values as the original function.
 
 ## Summary
 
-- Advantages of Refactoring the Original Script
+### Advantages of Refactoring the Original Script
 Refactoring can greatly improve an existing code, as it can be made more legible through design, more efficient by using less memory, and faster for its users. The code effectively output the same results for a given stock's yearly return percentage and total daily volume in its respective year, but with far greater flexibility for any additional data.
 
-- Disadvantages of Refactoring the Original Script
+### Disadvantages of Refactoring the Original Script
 However, if the code is not initially understood before it is refactored, it can lead to errors and a broken code. It was time consuming to figure out a new structure and logic for our new code, so depending on when the clients were intent on making their investment, the delivery of the analysis may have been delayed.
 
